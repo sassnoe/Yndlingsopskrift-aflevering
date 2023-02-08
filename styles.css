@@ -1,0 +1,33 @@
+header {
+  background: #ecf9ff;
+}
+
+h1 {
+  color: black;
+  font-family: "Bubbler One", sans-serif;
+  font-size: 300%;
+  text-align: center;
+  text-shadow: 2px 2px 2px #ababab;
+}
+p {
+  color: black;
+  border: 5px solid royalblue;
+  padding: 30px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#ingredients,
+#instructions {
+  font-family: "Lustria", serif;
+  background-color: #fffbeb;
+}
+
+/*
+font-family: 'Bubbler One', sans-serif;
+font-family: 'Lustria', serif;
+font-family: 'Maitree', serif;
+*/
