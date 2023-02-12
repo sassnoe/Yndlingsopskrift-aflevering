@@ -1,33 +1,104 @@
-header {
+body {
+  margin: 0;
+  padding: 0;
   background: #ecf9ff;
 }
 
-h1 {
+main {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "article"
+    "footer";
+}
+
+@media (min-width: 900px) {
+  main {
+    grid-template-areas:
+      "header header header header"
+      "nav article article"
+      "footer footer footer footer";
+  }
+}
+
+header {
+  grid-area: header;
   color: black;
   font-family: "Bubbler One", sans-serif;
-  font-size: 300%;
+  font-size: 200%;
   text-align: center;
   text-shadow: 2px 2px 2px #ababab;
 }
-p {
-  color: black;
-  border: 5px solid royalblue;
-  padding: 30px;
+
+nav {
+  grid-area: nav;
 }
+
+article {
+  grid-area: article;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #f8cba6;
+}
+
+h3 {
+  font-family: "Maitree", serif;
+  font-size: x-large;
+}
+
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-#ingredients,
-#instructions {
+#prep-time {
+  text-align: center;
+}
+
+#cookie-content {
+  display: grid;
   font-family: "Lustria", serif;
   background-color: #fffbeb;
+
+  padding-left: 20px;
+}
+/* Prøvede at lege med asides og nav, men jeg synes
+at den måde grid-column:1 og 2 "snappede" sammen på
+så flot ud, og kunne ikke replikere det med nav, article og asides.
+Derfor denne løsning. */
+#ingredients {
+  grid-column: 1;
+}
+
+#instructions {
+  grid-column: 2;
+}
+
+#process {
+  display: grid;
+  font-family: "Lustria", serif;
+  background-color: #ffe7cc;
+
+  /* Ved trial and error, fand jeg ud af at 8vh så flot ud.
+  Kunne ikke finde en løsning jeg syntes så bedre ud. 
+  Prøvede forskellige em værdier, px osv. Endte på 8vh.
+  */
+  padding-left: 8vh;
+}
+
+#nutrition {
+  display: grid;
+  font-family: "Lustria", serif;
+  background-color: #f8cba6;
+  padding-left: 8vh;
 }
 
 /*
 font-family: 'Bubbler One', sans-serif;
 font-family: 'Lustria', serif;
 font-family: 'Maitree', serif;
-*/
+*/ ;

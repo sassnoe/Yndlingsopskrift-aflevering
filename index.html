@@ -4,64 +4,143 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Fandt nogle fonts på Google via nogle af de links der var delt til undervisningen. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bubbler+One&family=Lustria&family=Maitree:wght@200&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bubbler+One&family=Lustria&family=Maitree:wght@200;400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
     <title>Chocolate Chip Cookies</title>
   </head>
   <body>
-    <header><h1>Nemme Chocolate Chip Cookies</h1></header>
+    <main>
+      <header>
+        <h1>Nemme Chocolate Chip Cookies</h1>
+      </header>
 
-    <img
-      src="https://www.kingarthurbaking.com/sites/default/files/blog-featured/Cookie-Chemistry-1_0.jpg"
-      alt="Chocolate Chip Cookies"
-      style="width: 55%; height: 55%"
-    />
-    <p>Nemme cookies på 20 minutter</p>
-    <section id="ingredients" class="recipe">
-      <ul>
-        <h3>Ingredienser / Indkøbsliste</h3>
+      <article>
+        <!-- Have enormt meget bøvl med at indsætte billedet korrekt.
+        Endte med denne løsning, men synes ikke helt det var hvad jeg gerne ville have.
+        Da det var et stort billede, har jeg reduceret til h: 45%, og w: 60%. -->
+        <img
+          src="https://www.kingarthurbaking.com/sites/default/files/blog-featured/Cookie-Chemistry-1_0.jpg"
+          alt="Chocolate Chip Cookies"
+          style="width: 60%; height: 45%"
+        />
+        <section id="prep-time">
+          <h3>
+            <p>
+              Foreberedelsestid: 10 minutter.
+              <br />Bagetid: 8-10 minutter. <br />Total tid: 18-20 minutter.
+            </p>
+          </h3>
+        </section>
 
-        <li>115g Smør</li>
-        <li>100g Sukker</li>
-        <li>55g Brun Farin</li>
-        <li>2 tsk Vanilje Ekstrakt</li>
-        <li>1 Stort Æg</li>
-        <li>210g Hvedemel</li>
-        <li>1/2 tsk Natron</li>
-        <li>1/2 tsk Salt</li>
-        <li>200g Chokolade</li>
-      </ul>
-    </section>
-    <section id="instructions" class="recipe">
-      <ol>
-        <h3>Instruktioner</h3>
-        <li>Tænd ovnen på 175 grader.</li>
-        <li>Smelt smør. Den skal være smeltet, men ikke varm.</li>
-        <li>
-          I en stor skål, bland sukker, brun farin og den smeltede smør sammen.
-        </li>
-        <li>Pisk forsigtigt vanilje og ægget i, sammen med smør og sukker.</li>
-        <li>
-          Tilføj salt, natron og mel. Det er en god ide at sigte melet i, mens
-          det blandes i. Det giver blødere, dejligere og mindre klumpede
-          cookies.
-        </li>
-        <li>
-          Bland dejen indtil den er netop blandet og uden melklumper. Pas på med
-          at overblande dejen.
-        </li>
-        <li>Bland chokolade af ønsket størrelse i.</li>
-        <li>Put en skefuld cookie-dej</li>
-        <li>
-          Bag i 8 minutter i midten af ovnen for bløde cookies. Bag i ca. 10
-          minutter for en hårdere/fastere cookie.
-        </li>
-      </ol>
-    </section>
+        <!-- Kan selv godt lide at ingredienser + hurtig oversigt over hvordan man
+        laver maden/opskriften står et let overskueligt sted, tæt på hinanden. 
+        Så kan fremgangsmåden læses nedenunder hvis der er brug for den, uden at
+        man behøver scrolle 25 gange for at komme ned til den vitale information i opskriften. -->
+        <section id="cookie-content">
+          <section id="ingredients">
+            <ul>
+              <h3>Ingredienser / Indkøbsliste</h3>
+
+              <li>115g Smør</li>
+              <li>100g Sukker</li>
+              <li>55g Brun Farin</li>
+              <li>2 tsk Vanilje Ekstrakt</li>
+              <li>1 Stort Æg</li>
+              <li>210g Hvedemel</li>
+              <li>1/2 tsk Natron</li>
+              <li>1/2 tsk Salt</li>
+              <li>200g Chokolade</li>
+            </ul>
+          </section>
+          <section id="instructions">
+            <ol>
+              <h3>Instruktioner</h3>
+              <li>Tænd ovnen på 175° grader.</li>
+              <li>Smelt smør. Den skal være smeltet, men ikke varm.</li>
+              <li>
+                I en stor skål, bland sukker, brun farin og den smeltede smør
+                sammen.
+              </li>
+              <li>
+                Pisk forsigtigt vanilje og ægget i, sammen med smør og sukker.
+              </li>
+              <li>
+                Tilføj salt, natron og mel. Det er en god ide at sigte melet i,
+                mens det blandes i. Det giver blødere, dejligere og mindre
+                klumpede cookies.
+              </li>
+              <li>
+                Bland dejen indtil den er netop blandet og uden melklumper. Pas
+                på med at overblande dejen.
+              </li>
+              <li>Bland chokolade af ønsket størrelse i.</li>
+              <li>Put en skefuld cookie-dej på en bradepande med bagepapir.</li>
+              <li>
+                Bag i 8 minutter i midten af ovnen for bløde cookies. Bag i ca.
+                10 minutter for en hårdere/fastere cookie.
+              </li>
+            </ol>
+          </section>
+        </section>
+        <section id="process">
+          <h3>Fremgangsmåde</h3>
+          <p>
+            Start med at smelte smøret. Smøret skal være varmt, men ikke
+            brændende varmt. En god måde at sørge for, at smøret ikke er for
+            varmt, er ved at smelte det ca. 90% ned. Derefter slukke for varmen,
+            og røre rundt i smøret indtil det resterende smør er smeltet.
+          </p>
+          <p>
+            Når smørret er smeltet, så pisk brun farin og sukker ind i smørret,
+            indtil de er helt blandede. Derefter, pisk forsigtigt æg og
+            vaniljeekstrakt i blandingen.
+          </p>
+          <p>
+            Bland herefter salt, natron og mel i. Bland forsigtigt og ikke for
+            meget mel af gangen i, da for meget røring kan give dejen en lidt
+            underlig tekstur.
+          </p>
+          <p>
+            Til sidst, kom chokolade af eget valg i dejen. Jeg foretrækker
+            personligt mørk chokolade, men alt chokolade fungerer.
+          </p>
+          <p>
+            Placer den ønskede mængde dej på bagepladen (ca. en spiseskefuld
+            eller en kugle i håndfladen per cookie giver en god størrelse) med
+            omkring 5-10 cm mellemrum mellem dem. Bag indtil de er faste i
+            kanten, men lidt bløde og under-bagte i midten (det kan tit ses ved
+            at midten stadig ligner dej, hvorimod kanten er lidt mere gylden).
+            Når de tages ud af ovnen efter ca. 8 minutter, vil de stadig
+            fortætte med at bage pga. bagepladens temperatur, og derfor ikke
+            være rå men stadig bløde efter de har kølet lidt ned.
+          </p>
+          <p>
+            Da ovne og deres temperaturer kan variere, kan det være en god ide
+            at starte med at give dem mindre tid og holde øje med dem, da de
+            altid kan bages mere hvis de ikke har den ønskede konsistens.
+          </p>
+        </section>
+        <section id="nutrition">
+          <h3>Næringsindhold</h3>
+          <p>
+            Næringsindholdet er et estimat, da serveringsstørrelsen kommer an på
+            hvor stor en cookie du har lavet.
+          </p>
+          <p>
+            Serveringsstørrelse: 1 Cookie <br />Kalorier: 138kcal <br />
+            Kulhydrater: 17g <br />Protein: 1g <br />Fedt: 6g <br />
+            Mættet fedtindhold: 4g <br />
+            Salt: 109mg <br />Sukker: 9g
+          </p>
+        </section>
+      </article>
+    </main>
   </body>
 </html>
